@@ -15,11 +15,11 @@ Crocodoc's docviewer can't render multiple documents on the same page. This is b
 
 The solution was to give each page an ```id``` that was specific to the document. I replaced all instances of:
 
-	id="Page{X}"
+	#Page"+X    //typically as part of a jQuery selector, e.g., y("#Page" + X)
 
  with: 
 
-	id="Page{X}"-{docviewerObj.id}
+	#Page"+X+"-"+docviewerObj.id
 
 where ```docviewerObj.id``` is the ```id=""``` that you gave to docviewer upon instantiating it. In order for the ```docviewerObj``` and thus ```docviewerObj.id```, to be globally available, I also had to add it as a parameter to ```docviewer```'s ```LazyLoader()``` function.
 
