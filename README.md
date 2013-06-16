@@ -1,4 +1,4 @@
-crocodoc-viewer
+Crocodoc: docviewer-multidoc.js
 ===============
 
 **docviewer-multidoc.js** is Crocodoc's docviewer.js modified to allow multiple documents per page.
