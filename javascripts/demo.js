@@ -1,6 +1,10 @@
 
 $('.showCrocodoc').click(function(){
 	var data=$(this).data();
+	
+	$(this).addClass('active');
+	$('.showCrocodoc').not(this).removeClass('active');
+
 	$.ajax({
 		//"dataType": "json",
 		"url": 'https://onarbor.com/decode/getCrocodocSession/'+data.uuid,
