@@ -1,0 +1,200 @@
+.container-iosSlider {
+	/* defaults for resposive height container */
+	position: relative;
+	width: 100%;
+	
+
+	/*TRP 5/20/13 height: 0;*/	
+	/* 39% being the ratio we are maintaining 
+	 * calculated by looking at the image 
+	 * ratio: 400/1024 = ~0.39 */
+	/*TRP 5/20/13 padding: 0 0 39% 0;*/
+
+	height:100%;
+	/*height:950px;*/
+	
+}
+
+
+.iosSlider {
+	width: 100%;
+	
+	/* this height ends up being your maximum height, 
+	 * if you want it to scale forever, set it to 
+	 * a very high number */
+	 /*TRP 5/20/13 	height: 1500px;*/
+	height:100%;
+
+}
+
+.iosSlider .slider {
+	width: 100%;
+	height: 100%;
+}
+
+.iosSlider .slider .item {
+	float: left;
+	
+	width: 100%;
+}
+
+
+
+.iosSlider .slider .item img {
+	width: 100%;
+	/*TRP 5/20/13height: auto;
+	*/
+	height:100%;
+
+
+}
+
+@media (min-width: 768px) {
+	.container-iosSlider, .container-iosSlider .iosSlider, .iosSlider .slider .item img{
+		height: 612px;
+	}
+}
+@media (max-width: 767px) {
+	.container-iosSlider, .container-iosSlider .iosSlider, .iosSlider .slider .item img{
+		height: 312px;
+	}
+}
+.span4.oLightestBlue .container-iosSlider, .span4.oLightestBlue .container-iosSlider .iosSlider, .span4.oLightestBlue .iosSlider .slider .item img{
+	height: 312px;
+}
+/*TRP 5/20/13 .iosSlider .slider .item  {
+	width: 100%;
+	height: auto;
+	background-position: 0 0;
+	background-repeat:no-repeat;
+}*/
+
+/* controls */
+.container-iosSlider .prevContainer,
+.container-iosSlider .nextContainer,
+.container-iosSlider .selectorsBlock{
+	-webkit-tap-highlight-color:none;
+}
+.container-iosSlider .prevContainer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	/*TRP 5/20/13
+	width: 100px;
+	
+	padding: 0 0 19.5% 0;
+	z-index: 10;*/
+
+	margin: auto 0;
+	height: 75%;
+	width: 75px;
+	z-index: 3;
+	
+}
+
+.container-iosSlider .prevContainer .prev {
+	position: absolute;
+	bottom: -10%;
+	left: 0;
+	width: 100%;
+	/*height: 20%;
+	TRP 5/20/13 background: #aaa;*/
+	bottom: 25%;
+}
+
+.container-iosSlider .prevContainer:hover .prev i,.container-iosSlider .prevContainer:active .prev i{
+	opacity:1;
+}
+
+.container-iosSlider .nextContainer {
+	position: absolute;
+	top: 0;
+	right: 0;
+	/*TRP 5/20/13
+	width: 100px;
+	
+	padding: 0 0 19.5% 0;
+	z-index: 10;*/
+	margin: auto 0;
+	height: 75%;
+	width: 75px;
+	z-index: 3;
+}
+.container-iosSlider .nextContainer:hover .next i,.container-iosSlider .nextContainer:active .next i{
+	opacity:1;
+}
+.container-iosSlider .nextContainer .next {
+	position: absolute;
+	bottom: -10%;
+	bottom: 25%;
+	left: 0;
+	width: 100%;
+	/*height: 20%;
+	TRP 5/20/13 background: #aaa;*/
+}
+
+.iosSlider .slider .item .inner .text1 {
+	/*background: none repeat scroll 0 0 #000000;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    position: absolute;
+    right: 150px;
+    top: 30px;
+    padding: 0 2px 0 7px;
+    height: 70px;*/
+    background: rgba(20,20,20, 0.5);
+    padding:2px;
+    position: absolute;
+    bottom: 5px;
+    z-index:1;
+    /*text-align:center;
+    margin:0 auto;*/
+}
+
+/*.iosSlider .slider .item .inner .text1 span {
+	color: #fff;
+    font-family: Norican;
+    font-size: 420%;
+    line-height: 73px;
+    padding: 0 8px;
+}*/
+
+.container-iosSlider .selectorsBlock {
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+	height: 5%;
+}
+
+.container-iosSlider .selectorsBlock .selectors {
+	position: relative;
+	top: 0;
+	left: 0;
+	margin: 0 auto;
+	/*TRP 5/20/13 width: 12%;*/
+	height: 100%;
+}
+
+.container-iosSlider .selectorsBlock .selectors .item {
+	position: relative;
+	top: 0;
+	left: 0;
+	float: left;
+		/*TRP 5/20/13 width: 16%;*/
+	width: 5%;
+	height: 100%;
+	/*TRP 5/20/13margin: 0 0 0 5%;*/
+	margin: 0 0 0 2%;
+	/*TRPbackground: #aaa;*/
+	background: rgba(80,80,80, 0.7);
+
+}
+
+.container-iosSlider .selectorsBlock .selectors .selected {
+	/*TRPbackground: #333;*/
+	background: rgba(20,20,20, 0.7);
+}
+
+.container-iosSlider .selectorsBlock .selectors .first {
+	margin-left: 0;
+}
