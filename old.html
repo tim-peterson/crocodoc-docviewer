@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Crocodoc-docviewer by tim-peterson</title>
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+   
+  </head>
+  <body>
+<div class='container'>
+    <div class='row' style='min-height:410px;'>
+      <div class='span2'>
+          <div class="btn-group btn-group-vertical">
+            <button type='button' data-id='1' data-uuid='4b9ea22a-0304-48ce-8426-0d99b8cf0d30' class='btn btn-large btn-primary showCrocodoc'>Show Doc 1 </button>
+            <button type='button' data-id='2' data-uuid='0468babf-0dfb-43cc-a12b-fb014815c88f' class='btn btn-large btn-primary showCrocodoc'>Show Doc 2</button>
+          </div> 
+          <div class='well' style='margin:10px 0'>
+            <p>Click button 1, then button 2 below to compare what happens to the page content for each document.</p>
+          </div>
+          <div class="btn-group btn-group-vertical">
+            <a href='index.html' class='btn btn-large'  >docviewer-multidoc.js (new) </a>
+            <a href='' class='btn btn-large active'  >docviewer.js (old) </a>
+          </div>              
+      </div>
+         <div class='span4 well'>
+            <div id="crocodoc-1" class='' style="width:25%">Doc 1 output</div>
+        </div>
+        <div class='span4 offset1 well'>
+            <div id="crocodoc-2" class='' style="width:25%">Doc 2 output </div>
+        </div>          
+    </div>
+    <div class="row">   
+      <h1>Crocodoc: docviewer-multidoc.js</h1>
+      <p>**docviewer-multidoc.js** is Crocodoc's docviewer.js modified to allow multiple documents per page.</p>
+
+      <p class="view"><a href="https://github.com/tim-peterson/crocodoc-viewer">View the Project on GitHub <small>tim-peterson/crocodoc-docviewer</small></a></p>
+      <ul>
+        <li><a href="https://github.com/tim-peterson/crocodoc-docviewer/zipball/master">Download <strong>ZIP File</strong></a></li>
+        <li><a href="https://github.com/tim-peterson/crocodoc-docviewer/tarball/master">Download <strong>TAR Ball</strong></a></li>
+        <li><a href="https://github.com/tim-peterson/crocodoc-docviewer">View On <strong>GitHub</strong></a></li>
+      </ul>
+  
+      <p>This project is maintained by <a href="https://github.com/tim-peterson">tim-peterson</a></p>
+      <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+    </div>
+</div>
+
+    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script src="javascripts/scale.fix.js"></script>
+
+    <script src="//static-v2.crocodoc.com/core/docviewer.js"></script>
+
+    <script defer src="javascripts/demo.js"></script>
+  </body>
+</html>
+
