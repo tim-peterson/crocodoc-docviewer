@@ -18,28 +18,33 @@
   </head>
   <body>
 <div class='container'>
-    <div class='row' style='min-height:410px'>
-      <div class='span2'>
+    <div class='row' style='max-height:210px'>
+      <div class='span12'>
 
-          <div class="btn-group btn-group-vertical">
+          <div class="btn-group btn-group-horizontal">
             <button type='button' data-id='1' data-uuid='4b9ea22a-0304-48ce-8426-0d99b8cf0d30' class='btn btn-large btn-primary showCrocodoc'>Show Doc 1 </button>
             <button type='button' data-id='2' data-uuid='0468babf-0dfb-43cc-a12b-fb014815c88f' class='btn btn-large btn-primary showCrocodoc'>Show Doc 2</button>
           </div> 
           <div class='well' style='margin:10px 0'>
             <p>Click button 1, then button 2 below to compare what happens to the page content for each document.</p>
           </div>
-          <div class="btn-group btn-group-vertical">
+          <div class="btn-group btn-group-horizontal">
             <a href='index.html' class='btn btn-large active'  >docviewer-multidoc.js (new) </a>
             <a href='old.html' class='btn btn-large'  >docviewer.js (old) </a>
           </div>              
-      </div>
-         <div class='span6 well container' style='margin-left:100px;width:45%;height:350px'>
+      </div>        
+    </div>
+    <div class='row'>
+         <div class='well span12' style=''>
             <div id="crocodoc-1" class='iosSlider' style="">Doc 1 output</div>
         </div>
-        <div class='span4 offset1 well container' style='margin-left:100px;width:45%;height:350px'>
-            <div id="crocodoc-2" class='' style="">Doc 2 output </div>
-        </div>          
     </div>
+    <div class='row'>
+        <div class=' well span12' style=''>
+            <div id="crocodoc-2" class='' style="">Doc 2 output </div>
+        </div>
+    </div>
+
     <div class="row">   
       <h1>Crocodoc: docviewer-multidoc.js</h1>
       <p>**docviewer-multidoc.js** is Crocodoc's docviewer.js modified to allow multiple documents per page.</p>

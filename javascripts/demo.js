@@ -17,7 +17,7 @@ $('.showCrocodoc').click(function(){
 			    dataType: "script",
 			    success: function(data2){
 			      	console.log('2nd callback'+data2);
-					var docViewer = new DocViewer({ id: "crocodoc-"+data.id, zoom: 0.5 });	
+					var docViewer = new DocViewer({ id: "crocodoc-"+data.id, zoom: "auto" });	
 
 			          docViewer.ready(function(e) {
 			          		var l=e.numpages;
